@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="500dp"
+    android:layout_height="550dp"
     tools:context=".Advanced">
 
     <TextView
@@ -43,7 +43,7 @@
         android:id="@+id/constraintLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
@@ -251,9 +251,52 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:id="@+id/constraintLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
+        <Button
+            android:id="@+id/buttonSin"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:backgroundTint="@android:color/holo_red_light"
+            android:layout_marginStart="10dp"
+            android:text="sin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/buttonLn"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:backgroundTint="@android:color/holo_red_light"
+            android:layout_marginStart="10dp"
+            android:text="ln"
+            app:layout_constraintStart_toEndOf="@+id/buttonTan"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <Button
+            android:id="@+id/buttonTan"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:backgroundTint="@android:color/holo_red_light"
+            android:layout_marginStart="10dp"
+            android:text="tan"
+            app:layout_constraintStart_toEndOf="@+id/buttonCos"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <Button
+            android:id="@+id/buttonCos"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:backgroundTint="@android:color/holo_red_light"
+            android:layout_marginStart="10dp"
+            android:text="cos"
+            app:layout_constraintStart_toEndOf="@+id/buttonSin"
+            tools:layout_editor_absoluteY="0dp" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -22,6 +22,7 @@ public class Advanced extends Fragment {
     private Button button0, button1, button2, button3, button4, button5, button6, button7, button8, button9, buttonDot, buttonLb, buttonRb;
     private Button  buttonPlus, buttonMinus, buttonMultiply, buttonDivide;
     private Button buttonC, buttonBackspace, buttonEquals;
+    private Button buttonSin, buttonCos, buttonTan, buttonLn;
 
 
     @Override
@@ -53,6 +54,11 @@ public class Advanced extends Fragment {
         buttonBackspace = root.findViewById(R.id.buttonBackspace);
         buttonEquals = root.findViewById(R.id.buttonEquals);
 
+        buttonSin = root.findViewById(R.id.buttonSin);
+        buttonCos = root.findViewById(R.id.buttonCos);
+        buttonTan = root.findViewById(R.id.buttonTan);
+        buttonLn = root.findViewById(R.id.buttonLn);
+
         button0.setOnClickListener(v -> updateText("0"));
         button1.setOnClickListener(v -> updateText("1"));
         button2.setOnClickListener(v -> updateText("2"));
@@ -71,6 +77,12 @@ public class Advanced extends Fragment {
         buttonMultiply.setOnClickListener(v -> updateText("*"));
         buttonDivide.setOnClickListener(v -> updateText("/"));
         buttonC.setOnClickListener(v -> display.setText(""));
+
+        buttonSin.setOnClickListener(v -> updateText("sin("));
+        buttonCos.setOnClickListener(v -> updateText("cos("));
+        buttonTan.setOnClickListener(v -> updateText("tan("));
+        buttonLn.setOnClickListener(v -> updateText("ln("));
+
 
         buttonBackspace.setOnClickListener(new View.OnClickListener() {
             @Override
