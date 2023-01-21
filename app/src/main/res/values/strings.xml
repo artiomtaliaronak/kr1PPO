@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Calculator</string>
+
+
+    <string name="simplified">Simplified</string>
+    <string name="advanced">Advanced</string>
+
+
+</resources>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Калькулятор</string>
+
+
+    <string name="simplified">Стандартный</string>
+    <string name="advanced">Расширенный</string>
+
+
+</resources>
