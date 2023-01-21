@@ -91,6 +91,7 @@ public class Simplified extends Fragment {
             public void onClick(View v) {
                 String input;
                 input = display.getText().toString();
+                previousExpression.setText(input);
 
                 Expression expression = new Expression(input);
                 String result = String.valueOf(expression.calculate());

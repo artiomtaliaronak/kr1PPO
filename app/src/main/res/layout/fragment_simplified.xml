@@ -3,8 +3,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="600dp"
+    android:layout_height="570dp"
     tools:context=".Simplified">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/simplified"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/previousExpressionView"
@@ -26,8 +32,8 @@
         android:textAlignment="textEnd"
         android:ems="10"
         android:inputType="textPersonName"
-        android:hint="Enter an value"
-        android:textSize="50sp"
+        android:hint="@string/hint"
+        android:textSize="40sp"
         android:importantForAutofill="no"
         app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
         app:layout_constraintEnd_toEndOf="parent"

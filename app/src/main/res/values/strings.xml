@@ -4,6 +4,7 @@
 
     <string name="simplified">Simplified</string>
     <string name="advanced">Advanced</string>
+    <string name="hint">Enter an expression</string>
 
 
 </resources>

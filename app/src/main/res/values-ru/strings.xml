@@ -4,6 +4,7 @@
 
     <string name="simplified">Стандартный</string>
     <string name="advanced">Расширенный</string>
+    <string name="hint">Введите выражение</string>
 
 
 </resources>

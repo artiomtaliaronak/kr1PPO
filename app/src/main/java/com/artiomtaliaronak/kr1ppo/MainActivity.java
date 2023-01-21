@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         bAdvanced = findViewById(R.id.bAdvanced);
         bSimplified = findViewById(R.id.bSimplified);
+        replaceFragment(new Simplified());
 
         bAdvanced.setOnClickListener(new View.OnClickListener() {
             @Override
