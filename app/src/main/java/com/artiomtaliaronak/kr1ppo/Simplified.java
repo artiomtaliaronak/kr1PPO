@@ -77,7 +77,7 @@ public class Simplified extends Fragment {
             public void onClick(View v) {
                 int cursorPos = display.getSelectionStart();
                 int len = display.getText().length();
-                if ( cursorPos >= 0 && len >= 0){
+                if ( cursorPos > 0 && len > 0 ){
                     SpannableStringBuilder selection = (SpannableStringBuilder) display.getText();
                     selection.replace(cursorPos - 1, cursorPos, "");
                     display.setText(selection);
@@ -89,7 +89,14 @@ public class Simplified extends Fragment {
         buttonEquals.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                String input;
+                input = display.getText().toString();
 
+                Expression expression = new Expression(input);
+                String result = String.valueOf(expression.calculate());
+
+                display.setText(result);
+                display.setSelection(result.length());
             }
         });
 
