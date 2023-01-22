@@ -23,23 +23,9 @@ public class MainActivity extends AppCompatActivity {
         bSimplified = findViewById(R.id.bSimplified);
         replaceFragment(new Simplified());
 
-        bAdvanced.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+        bAdvanced.setOnClickListener(view -> replaceFragment(new Advanced()));
+        bSimplified.setOnClickListener(view -> replaceFragment(new Simplified()));
 
-                replaceFragment(new Advanced());
-
-            }
-        });
-
-        bSimplified.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                replaceFragment(new Simplified());
-
-            }
-        });
     }
 
     private void replaceFragment(Fragment fragment){

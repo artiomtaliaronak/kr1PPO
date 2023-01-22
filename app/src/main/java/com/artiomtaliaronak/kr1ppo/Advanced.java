@@ -116,8 +116,6 @@ public class Advanced extends Fragment {
         return root;
     }
 
-
-
     private void updateText(String newSymbol){
         String expression;
         String leftPart, rightPart;
