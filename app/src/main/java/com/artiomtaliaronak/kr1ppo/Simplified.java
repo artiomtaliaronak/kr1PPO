@@ -104,9 +104,7 @@ public class Simplified extends Fragment {
         return root;
     }
 
-
-
-    private void updateText(String newSymbol){
+    public void updateText(String newSymbol){
         String expression;
         String leftPart, rightPart;
         int cursorPos;
